@@ -1,7 +1,6 @@
-def amk3e5op3wc(message):
+def encrypt(message):
     code = []
-    DEBUG = True
-    global code
+    DEBUG = False
     for char in message:
         if DEBUG:
             print code
@@ -84,9 +83,7 @@ def amk3e5op3wc(message):
         elif char == 'z':
             code.append('a')
             break
-
-
-        if char == 'A':
+        elif char == 'A':
             code.append('Z')
             break
         elif char == 'B':
@@ -164,10 +161,7 @@ def amk3e5op3wc(message):
         elif char == 'Z':
             code.append('A')
             break
-
-
-
-        if char == '1':
+        elif char == '1':
             code.append('9')
             break
         elif char == '2':
@@ -197,25 +191,21 @@ def amk3e5op3wc(message):
         elif char == '0':
             code.append('0')
             break
-
-
-
-        if char == ' ':
+        elif char == ' ':
             code.append(' ')
             break
-
-
-
-
-        if char == '.' or '?' or '!' or '~' or '`' or '@' or '#' or '$' or '%' or '^' or '*' or '(' or ')' or '_' or '-' or '=' or '+'\
-           or '{' or '}' or ':' or ';' or "'" or '"' or ',' or '<' or '>' or '/':
-            code.append(char)
-            break
+#        elif char == '.' or '?' or '!' or '~' or '`' or '@' or '#' or '$' or '%' or '^' or '*' or '(' or ')' or '_' or '-' or '=' or '+'\
+#           or '{' or '}' or ':' or ';' or "'" or '"' or ',' or '<' or '>' or '/':
+#            code.append(char)
+#            break
     code_1 = ''.join(code)
     if DEBUG:
         print code
     return code_1
-DEBUG = False
-fyegue32b5ed = raw_input("TYPE: \n")
-ggkedrfc3b2r4 = amk3e5op3wc(fyegue32b5ed)
-print ggkedrfc3b2r4
+
+
+while True:
+    to_crypt = raw_input("Enter Words to Encrypt ('quit' to exit): ")
+    if to_crypt == 'quit': break
+    encrypted_string = encrypt(to_crypt)
+    print "Encrypted: " + encrypted_string
