@@ -1,6 +1,6 @@
 def amk3e5op3wc(message):
     code = []
-    DEBUG = False
+    DEBUG = True
     global code
     for char in message:
         if DEBUG:
@@ -84,8 +84,8 @@ def amk3e5op3wc(message):
         elif char == 'z':
             code.append('a')
             break
-    
-        
+
+
         if char == 'A':
             code.append('Z')
             break
@@ -215,7 +215,7 @@ def amk3e5op3wc(message):
     if DEBUG:
         print code
     return code_1
-DEBUG = False   
+DEBUG = False
 fyegue32b5ed = raw_input("TYPE: \n")
 ggkedrfc3b2r4 = amk3e5op3wc(fyegue32b5ed)
 print ggkedrfc3b2r4
