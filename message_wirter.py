@@ -191,7 +191,6 @@ def encrypt(char):
             code.append(' ')
         else:
             code.append(char)
-        print char
     return ''.join(code)
 u = []
 while True:
