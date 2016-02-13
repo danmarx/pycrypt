@@ -1,6 +1,5 @@
 def encrypt(char):
     code = []
-    DEBUG = False
     if 1 == 1:
         if char == 'a':
             code.append('z')
