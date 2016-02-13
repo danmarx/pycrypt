@@ -192,12 +192,9 @@ def encrypt(char):
             code.append(' ')
         else:
             code.append(char)
-    if DEBUG:
-        print code
         print char
     return ''.join(code)
 u = []
-k = ''
 while True:
     to_crypt = raw_input("Enter Words to Encrypt ('quit' to exit): ")
     if to_crypt == 'quit':
@@ -205,5 +202,5 @@ while True:
     for i in to_crypt:
         encrypted_string = encrypt(i)
         u.append(encrypted_string)
-    print "Encrypted: ",k.join(u)
+    print "Encrypted: ",''.join(u)
     u = []
