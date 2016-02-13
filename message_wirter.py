@@ -1,6 +1,10 @@
 def encrypt(message):
     code = []
     DEBUG = False
+<<<<<<< Updated upstream
+=======
+    global code
+>>>>>>> Stashed changes
     for char in message:
         if DEBUG:
             print code
